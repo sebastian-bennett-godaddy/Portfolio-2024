@@ -10,6 +10,8 @@ import {
   fontXXL,
   fontXXXL,
 } from "@/interfaces/DefaultVariables";
+import Card from "antd/es/card/Card";
+import { Col, Row } from "antd";
 
 export default function Home() {
   const router = useRouter();
@@ -62,73 +64,206 @@ export default function Home() {
       </div>
 
       <div className={styles.body}>
-        <a
-          onClick={() => handleRouteSwitch("/profile")}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Profile{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Discover detailed insights into my skills and experiences.
-          </p>
-        </a>
+        <Col>
+          <Row style={{ marginTop: 25 }}>
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/profile")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Profile{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Discover detailed insights into my skills and experiences.
+                </p>
+              </a>
+            </Card>
 
-        <a
-          onClick={() => handleRouteSwitch("/profession")}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Profession{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about my professional journey and key projects!
-          </p>
-        </a>
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/profession")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Profession{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Learn about my professional journey and key projects!
+                </p>
+              </a>
+            </Card>
+          </Row>
 
-        <a
-          onClick={() => handleRouteSwitch("/education")}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Education{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore my educational background and certifications.
-          </p>
-        </a>
+          <Row style={{ marginTop: 25 }}>
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/education")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Education{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Explore my educational background and certifications.
+                </p>
+              </a>
+            </Card>
 
-        <a
-          onClick={() => handleRouteSwitch("/resume")}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Resumé{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            View and download my complete resumé for more information.
-          </p>
-        </a>
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/resume")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Volunteer{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
+                  View and download my complete resumé for more information.
+                </p>
+              </a>
+            </Card>
+          </Row>
+          <Row style={{ marginTop: 25 }}>
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/profile")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Religious{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Discover detailed insights into my skills and experiences.
+                </p>
+              </a>
+            </Card>
+
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/profession")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Designs{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Learn about my professional journey and key projects!
+                </p>
+              </a>
+            </Card>
+          </Row>
+
+          <Row style={{ marginTop: 25 }}>
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/education")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Music{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-sm opacity-50">
+                  Explore my educational background and certifications.
+                </p>
+              </a>
+            </Card>
+
+            <Card
+              style={{ width: "45%", margin: "auto" }}
+              cover={
+                <img alt="example" src="/images/background/wallpaper4.jpg" />
+              }
+            >
+              <a
+                onClick={() => handleRouteSwitch("/resume")}
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="mb-3 text-2xl font-semibold">
+                  Books{" "}
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
+                  View and download my complete resumé for more information.
+                </p>
+              </a>
+            </Card>
+          </Row>
+        </Col>
       </div>
     </main>
   );
