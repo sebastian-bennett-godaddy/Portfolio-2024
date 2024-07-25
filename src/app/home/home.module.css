@@ -3,10 +3,13 @@
   background-color: black;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+=======
+>>>>>>> 90c88bb50dff9c1f7626abaca4a2070e80b14604
 }
 
 .header {
